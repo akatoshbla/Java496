@@ -1,0 +1,108 @@
+Test Case Outputs:
+
+Brute Force:
+Individual Test Cases:
+Optimal Tour: 7 Cities
+Min Cost 213.97529912627033
+0 2 1 4 6 5 3 0 
+A C B E G F D A 
+
+Run Time was 41msecs
+
+Optimal Tour: 9 Cities
+Min Cost 639.3455351830323
+1 3 7 5 6 2 4 0 8 1 
+B D H F G C E A I B 
+
+Run Time was 82msecs
+
+Instructor Test Cases:
+Optimal Tour: 5 Cities
+Min Cost 179.30334267593292
+0 1 4 3 2 0 
+A B E D C A 
+
+Run Time was 36msecs
+
+Optimal Tour: 12 Cities
+Min Cost 580.2353924073391
+0 10 8 1 9 4 3 6 11 7 5 2 0 
+A K I B J E D G L H F C A 
+
+Run Time was 28282msecs
+
+Greedy:
+Individual Test Cases:
+Best Greedy Tour: 7 Cities
+Min Cost 316.27951485735343
+0 6 5 4 2 1 3 0 
+A G F E C B D A 
+
+Run Time was 36msecs
+
+Best Greedy Tour: 9 Cities
+Min Cost 768.0470328510632
+0 8 1 4 2 6 3 7 5 0 
+A I B E C G D H F A 
+
+Run Time was 36msecs
+
+Best Greedy Tour: 26 Cities
+Min Cost 2757.440448343252
+0 21 19 25 23 24 22 20 18 17 13 1 12 16 14 2 15 11 8 3 10 6 4 5 7 9 0 
+A V T Z X Y W U S R N B M Q O C P L I D K G E F H J A 
+
+Run Time was 38msecs
+
+Instructor Test Cases:
+Best Greedy Tour: 5 Cities
+Min Cost 190.58549704246406
+0 1 4 2 3 0 
+A B E C D A 
+
+Run Time was 36msecs
+
+Best Greedy Tour: 12 Cities
+Min Cost 872.8222916142839
+0 11 9 1 10 8 6 7 5 2 3 4 0 
+A L J B K I G H F C D E A 
+
+Run Time was 38msecs
+
+Minimal Spanning Tree:
+Individual Test Cases:
+MST Tour: 7 Cities
+Min Cost 177.78174768747215
+0 2 4 3 5 6 0 
+A C E D F G A 
+
+Run Time was 37msecs
+
+MST Tour: 9 Cities
+Min Cost 759.0003122926142
+0 1 4 2 6 3 7 5 8 
+A B E C G D H F I A 
+
+Run Time was 37msecs
+
+MST Tour: 26 Cities
+Min Cost 1652.897365045274
+0 4 13 6 17 19 22 8 9 11 2 14 18 24 16 20 5 12 25 23 7 15 21 10 3 0 
+A E N G R T W I J L C O S Y Q U F M Z X H P V K D A 
+
+Run Time was 42msecs
+
+Instructor Test Cases:
+MST Tour: 5 Cities
+Min Cost 119.30436349367712
+0 1 4 2 3 
+A B E C D A 
+
+Run Time was 35msecs
+
+MST Tour: 12 Cities
+Min Cost 628.7697297775677
+0 2 10 8 3 4 6 11 7 5 1 9 
+A C K I D E G L H F B J A 
+
+Run Time was 38msecs

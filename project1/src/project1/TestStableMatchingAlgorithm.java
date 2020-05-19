@@ -1,0 +1,165 @@
+/* 
+ * Programmer: David Kopp
+ * Project #: Project 1
+ * File Name: TestBFStableMatchingAlgorithm.java
+ * Date: 9-15-15
+ * Class: Comp496ALG
+ * Description: This class is the test driver program for the BFStableMatchingAlgorithm
+ * 				and the GSStableMatchingAlgorithm. It prints stable matches and run times
+ * 				for analysis.
+ */
+
+package project1;
+
+public class TestStableMatchingAlgorithm 
+{
+
+	public static void main(String[] args) throws Exception
+	{
+		long startTime;
+		long stopTime;
+		long elapsedTime;
+				
+		/* Run these test cases 1 at a time and not all together. If you run them in sequence
+		** you will get bad estimates because of JVM optimization and CPU caching. 
+		** (First of every group of the same objects take longer than subsequent objects of
+		** the same type, thus you have to run them 1 at a time or in an alternating pattern.)
+		*/ 
+		
+//	    // Sample Test Case 1 using BFS
+//	    System.out.println("BFS Sample Test Case 1 - In male female pairs (n=3)");
+//		startTime = System.currentTimeMillis();
+//		BFStableMatchingAlgorithm bfs1 = new BFStableMatchingAlgorithm("testCase1.txt");
+//	    stopTime = System.currentTimeMillis();
+//	    elapsedTime = stopTime - startTime;
+//	    System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+//	    
+//		// Random Data Test using BFS
+//		System.out.println("BFS Random Data Run 1 - In male female pairs (n=6)");
+//		startTime = System.currentTimeMillis();
+//		BFStableMatchingAlgorithm bfs2 = new BFStableMatchingAlgorithm("randomData1.txt");
+//		stopTime = System.currentTimeMillis();
+//		elapsedTime = stopTime - startTime;
+//		System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+//		
+//		// Sample Test Case 2 using BFS
+//		System.out.println("BFS Sample Test Case 2 - In male female pairs (n=8)");
+//		startTime = System.currentTimeMillis();
+//		BFStableMatchingAlgorithm bfs3 = new BFStableMatchingAlgorithm("testCase2.txt");
+//		stopTime = System.currentTimeMillis();
+//		elapsedTime = stopTime - startTime;
+//		System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+//		
+//		// Random Data Test using BFS
+//		System.out.println("BFS Random Data Run 2 - In male female pairs (n=10)");
+//		startTime = System.currentTimeMillis();
+//		BFStableMatchingAlgorithm bfs4 = new BFStableMatchingAlgorithm("randomData2.txt");
+//		stopTime = System.currentTimeMillis();
+//		elapsedTime = stopTime - startTime;
+//		System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+//		
+//		// Random Data Test using BFS
+//		System.out.println("BFS Random Data Run 3 - In male female pairs (n=11)");
+//		startTime = System.currentTimeMillis();
+//		BFStableMatchingAlgorithm bfs5 = new BFStableMatchingAlgorithm("randomData3.txt");
+//		stopTime = System.currentTimeMillis();
+//		elapsedTime = stopTime - startTime;
+//		System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+//				
+//		// Random Data Test using BFS
+//		System.out.println("BFS Random Data Run 4 - In male female pairs (n=12)");
+//		startTime = System.currentTimeMillis();
+//		BFStableMatchingAlgorithm bfs6 = new BFStableMatchingAlgorithm("randomData4.txt");
+//		stopTime = System.currentTimeMillis();
+//		elapsedTime = stopTime - startTime;
+//		System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+//		
+//		// Sample Test Case 1 using GSS
+//		System.out.println("GS Sample Test Case 1 - In male female pairs (n=3)");
+//		startTime = System.currentTimeMillis();
+//		GSStableMatchingAlgorithm gss1 = new GSStableMatchingAlgorithm("testCase1.txt");
+//	    stopTime = System.currentTimeMillis();
+//	    elapsedTime = stopTime - startTime;
+//		System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+//				
+//		// Sample Test Case 2 using GSS
+//		System.out.println("GS Sample Test Case 2 - In male female pairs (n=8)");
+//		startTime = System.currentTimeMillis();
+//		GSStableMatchingAlgorithm gss2 = new GSStableMatchingAlgorithm("testCase2.txt");
+//		stopTime = System.currentTimeMillis();
+//		elapsedTime = stopTime - startTime;
+//		System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+//
+//		// Random Data Test using GSS
+//		System.out.println("GS Random Data Run 1 - In male female pairs (n=50)");
+//		startTime = System.currentTimeMillis();
+//		GSStableMatchingAlgorithm gss3 = new GSStableMatchingAlgorithm("randomData5.txt");
+//		stopTime = System.currentTimeMillis();
+//		elapsedTime = stopTime - startTime;
+//		System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+//
+//		// Random Data Test using GSS
+//		System.out.println("GS Random Data Run 2 - In male female pairs (n=100)");
+//		startTime = System.currentTimeMillis();
+//		GSStableMatchingAlgorithm gss4 = new GSStableMatchingAlgorithm("randomData6.txt");
+//		stopTime = System.currentTimeMillis();
+//		elapsedTime = stopTime - startTime;
+//		System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+//		
+//		// Random Data Test using GSS
+//		System.out.println("GS Random Data Run 3 - In male female pairs (n=200)");
+//		startTime = System.currentTimeMillis();
+//		GSStableMatchingAlgorithm gss5 = new GSStableMatchingAlgorithm("randomData7.txt");
+//		stopTime = System.currentTimeMillis();
+//		elapsedTime = stopTime - startTime;
+//		System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+//
+//		// Random Data Test using GSS
+//		System.out.println("GS Random Data Run 4 - In male female pairs (n=400)");
+//		startTime = System.currentTimeMillis();
+//		GSStableMatchingAlgorithm gss6 = new GSStableMatchingAlgorithm("randomData8.txt");
+//		stopTime = System.currentTimeMillis();
+//		elapsedTime = stopTime - startTime;
+//		System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+//		
+//		// Random Data Test using GSS
+//		System.out.println("GS Random Data Run 5 - In male female pairs (n=500)");
+//		startTime = System.currentTimeMillis();
+//		GSStableMatchingAlgorithm gss7 = new GSStableMatchingAlgorithm("randomData9.txt");
+//		stopTime = System.currentTimeMillis();
+//		elapsedTime = stopTime - startTime;
+//		System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+//		
+//		// Instructor Case using BFS
+//		System.out.println("BFS Instructor Case 1 - In male female pairs (n=6)");
+//		startTime = System.currentTimeMillis();
+//		BFStableMatchingAlgorithm bfs8 = new BFStableMatchingAlgorithm("instructorCase1.txt");
+//		stopTime = System.currentTimeMillis();
+//		elapsedTime = stopTime - startTime;
+//		System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+//		
+//		// Instructor Case using BFS
+//		System.out.println("BFS Instructor Case 2 - In male female pairs (n=9)");
+//		startTime = System.currentTimeMillis();
+//		BFStableMatchingAlgorithm bfs9 = new BFStableMatchingAlgorithm("instructorCase2.txt");
+//		stopTime = System.currentTimeMillis();
+//		elapsedTime = stopTime - startTime;
+//		System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+//		
+//		// Instructor Case using GSS
+//		System.out.println("GSS Instructor Case 1 - In male female pairs (n=6)");
+//		startTime = System.currentTimeMillis();
+//		GSStableMatchingAlgorithm gss8 = new GSStableMatchingAlgorithm("instructorCase1.txt");
+//		stopTime = System.currentTimeMillis();
+//		elapsedTime = stopTime - startTime;
+//		System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+//		
+		// Instructor Case using GSS
+		System.out.println("GSS Instructor Case 2 - In male female pairs (n=9)");
+		startTime = System.currentTimeMillis();
+		GSStableMatchingAlgorithm gss9 = new GSStableMatchingAlgorithm("1000n.txt");
+		stopTime = System.currentTimeMillis();
+		elapsedTime = stopTime - startTime;
+		System.out.print("Run Time was " + elapsedTime +"msecs\n\n");
+	}
+}
