@@ -4,3 +4,4 @@ Project 2 is the euclidean traveling salesman problem solved by using brute forc
 
 Project 3 is the knapsack problem and was solved using brute force and dynamic programming.
 
+MT Extra Credit is a topological Sort solution.
